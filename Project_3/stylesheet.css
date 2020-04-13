@@ -1,0 +1,296 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* header */
+header {
+    background-color: #6caed5
+}
+
+.container {
+    max-width: 100%;
+    height: 125px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+.header-left {
+    float: left;
+}
+
+.logo {
+	max-width: 125px;
+	margin-top: 15px;
+}
+
+.header-right {
+	float: right;
+}
+
+.header-right a {
+	padding: 10px 15px;
+	line-height: 60px;
+	transition: all 0.5s;
+	color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	text-decoration: none;
+}
+
+.header-right a:hover {
+	color: black;
+}
+
+/* About  */
+.about {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6 ), rgba(110, 105, 105,0.6)), url(images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.user-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    position: absolute;
+    text-align: center;
+}
+
+.about-title {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.user-box img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #6caed5;
+}
+
+.user-box h3{
+    color: #fff;
+    margin: 10px;
+}
+
+.user-box p {
+    color: #fff;
+}
+
+.scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-10%);
+    border: 1px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar span {
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.scroll-bar {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(10px);}
+}
+
+
+
+/* education */
+.education {
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 243, 196,0.3), rgba(250, 217, 90,1));
+    height: 300px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+.image-content {
+    width: 200px;
+    height: 200px;
+    animation-name: example;
+    animation-duration: 4s ;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.education-title {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.education-history h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px ;
+}
+
+.education-history {
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+}
+
+
+/* experience */
+
+.experience-title {
+    text-align: center;
+	font-size: 28px;
+	padding-bottom: 15px;
+	margin-bottom: 80px;
+}
+  
+  
+.experience {
+	padding: 40px 0;
+	padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(to right, rgba(255, 243, 196,0.3), rgba(250, 217, 90,1));
+    height: 500px;
+}
+
+.content {
+	float: left;
+	width: 33%;
+	padding: 0 30px;
+	color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+}
+
+.content img {
+	width: 220px;
+	height: 220px;
+}
+
+.content p {
+	font-weight: normal;
+	padding-top: 5px;
+    padding-bottom: 80px;
+    font-size: 16px;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Contact Us */
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    margin-top: 70px;
+    font-size: 30px;
+    border-bottom: 1px solid #dee7ec;
+}
+
+.contact-us {
+	padding-left: 5%;
+    padding-right: 5%;
+}
+
+input, textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+
+
+.contact-form {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.contact-form p {
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+  
+.email,
+.message {
+    border: 1px solid #dee7ec;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 40%;
+}
+  
+.email:hover,
+.message:hover {
+    border: 1px solid #babcbe;
+}
+  
+.submit {
+    padding:15px 40px;
+    margin-bottom: 40px;
+    box-shadow: 5px 10px rgba(154, 96, 224,0.5);
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.submit:hover {
+    background-color: rgb(255, 250, 102);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit:active{
+    box-shadow: none;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+footer {
+    background-color: #6caed5;
+    margin-top: 500px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.link-contact a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);;
+}
+
+.fa {
+    margin-right: 5px;
+}

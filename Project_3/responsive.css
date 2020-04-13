@@ -1,0 +1,23 @@
+@media all and (max-width: 680px) {
+   
+    .user-box p {
+        font-size: 16px;
+    }
+
+    .content {
+        float: left;
+        width: 50%;
+        padding: 0 30px;
+        color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    .experience {
+        height: 850px;
+    }
+
+    .email,
+    .message {
+    width: 80%;
+}
+}
